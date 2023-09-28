@@ -1,0 +1,616 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static './assest/css/all.css' %}">
+    <link rel="stylesheet" href="{% static './assest/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static './assest/css/style.css' %}">
+</head>
+<header>
+   
+</header>
+<body>
+
+         <!-- Navbar Start -->
+         <div class="container  ">
+          <div class="row">
+              <div class="col navvv">
+                  <nav class="navbar navbar-expand-lg  nav_color">
+                      <a class="navbar-brand" href="/">
+                          <img src="{% static './assest/img/logo1.png' %}" class="mt-2">
+                      </a>
+
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="{% static './assest/img/ham.png' %}" style="width: 35px; height: 35px;">
+                      </button>
+
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> 
+                        <div class="navbar-nav nav_items">
+                          <!-- <a class="nav-item nav-link active mr-4" href="./index.html">HOME <span class="sr-only">(current)</span></a> -->
+                          <!-- <a class="nav-item nav-link mr-4" href="#aboutus">About Us</a> -->
+                          <a class="nav-item nav-link mr-4" href="#services">Buy and Sell Crypto</a>
+                          <a class="nav-item nav-link mr-4" href="#cryptopromotion_section">Crypto Promotion</a>
+                          <a class="nav-item nav-link mr-4" href="#forex_sec">Forex Training</a>
+                          <a class="nav-item nav-link mr-4" href="#other_buisness">buisness</a>
+                          <a href="http://wa.me//+2348155278724">
+                          <button class=" mr-4 btnss">Trade Now</button> 
+                          </a>
+                        </div>
+                      </div>
+                    </nav>
+              </div>
+          </div>
+       </div>
+        <!-- Navbar ends -->
+
+
+      <!-- carousel start -->
+      <div class="section carousel_section">
+        <div class="bd-example">
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static './assest/img/carousel01.png' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 class="carousel_header_text">Most <span class="header_text">Trusted,<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Fastest & Reliable
+                  </span><br>&nbsp; &nbsp; &nbsp; &nbsp;  Crypto Exchange</h1>
+                  <p class="carousel_header_para">Trade your cryptocurrency and giftcards at high rates!</p>
+                  <a href="http://wa.me//+2348155278724"><button class="carousel_button ml-4" >Trade Now</button></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="{% static './assest/img/carousel2.png' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 class="carousel_header_text1">Crypto<br>
+                    <span class="header_text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Promotion & Marketing</span></h1>
+                  <p class="carousel_header_para1">Cryptochris Exchange is the solution to all marketing problems!</p>
+                  <button class="carousel_button" >Get Started</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="{% static './assest/img/carousel3.png' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1 class="carousel_header_text2">Buying of all<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="header_text">country Giftcards</span> </h1>
+                  <p class="carousel_header_para2">We offer the best rate when it comes to trading<br><span class="gift">of giftcards...why not give us a try!</span></p>
+                  <button class="carousel_button mr-4" >Trade Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <!-- carosel ends -->
+
+
+    <!-- mobile-device carosel starts -->
+    <a href="http://wa.me//+2348155278724">
+    <div class="section moblie_carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static './assest/img/sign2.png' %}"  class="d-block  img-fluid" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static './assest/img/sign3.png' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static './assest/img/sign1.png' %}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+   </div> 
+  </a>
+    <!-- mobile-device carosel starts -->
+
+    <!-- mobile-device head-text starts -->
+    <div class="section mobile_device_head_text mb-4 ">
+      <div class="container">
+        <div class="row">
+          <div class="col mb-4 ">
+            <h2 class="mobile_header_text">
+              Most <span class="header_text">Trusted,<br>
+            Fastest & Reliable</span><br>
+            Crypto Exchange
+            </h2>
+            <p class="about_para">Welcome to Cryptochris Exchange, Enjoy a seamless experience trading your cryptocurrencies and giftcards.</p>
+            <a href="http://wa.me//+2348155278724"><button class="butt">Trade Now</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile-device head-text ends -->
+
+
+
+
+
+      <!-- rate start -->
+      
+      <div class="section rate_section">
+        <marquee>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2   rate ml-4">
+              <div class="media">
+                <img src="{% static './assest/img/google.png' %}" class="mr-2" alt="...">
+                <div class="media-body">
+
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2  rate">
+              <div class="media">
+                <img src="{% static './assest/img/bitcoin.png' %}" class="mr-2" alt="...">
+                <div class="media-body">
+
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2  rate">
+              <div class="media">
+                <img src="{% static './assest/img/steam.png' %}" class="mr-2" alt="...">
+                <div class="media-body">
+
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2  rate">
+              <div class="media">
+                <img src="{% static './assest/img/ethereum.png' %}" class="mr-2" alt="...">
+                <div class="media-body">
+                  
+                </div>
+              </div>
+            </div>
+
+   
+
+          </div>
+        </div>
+      </marquee>
+      </div>
+      <!-- rate ends -->
+
+      <!-- about us start -->
+      <div class="section about_us_section " id="aboutus">
+        <div class="container about_us_l">
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="{% static './assest/img/logo.png' %}" class="about_us_img aboutt img-fluid rounded mx-auto d-block" alt="Responsive image">
+            </div>
+            <div class="col-sm-6">
+              <h6 class="about_p">Best Trading Experience</h6>
+              <h2 class="about_text">Trade Anywhere & Anytime!</h2>
+              <p class="about_para">Welcome to Cryptochris Exchange, your number one source for trading cryptocurrency, 
+                gift cards and more... We're dedicated to providing you the very best of trading,
+                 with an emphasis on integrity, swift, reliable and professionalism when it comes to our buisness deals.
+                Cryptochris Exchange is into trading of cryptocurrency, giftcards and other buisness...</p>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      <!-- about us ends -->
+
+      <!-- goal start -->
+      <div class="section ">
+        <div class="container goal_section">
+          <div class="row ">
+            <div class="col mb-4">
+              <h6 class="about_p">A Better Way to Invest</h6>
+              <h2 class="about_text">The World Leading Crytocurrency Exchange Platform</h2>
+            </div>
+            <div class="w-100"></div>
+
+            <div class="col-sm-12 col-md-4  mt-3 ">
+              <div class="card otherss" >
+                <img src="{% static './assest/img/sweet.png' %}" class="card-img-top img-fluid mt-4 ml-4" style="width: 4rem; height: 4rem; " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sweet Rates</h5>
+                  <p class="card-text">Our customers are 100% assured of getting the best market rate at all times 
+                    Our customers satisfaction remains our priority</p>
+                </div>
+              </div>
+            </div>
+			      <div class="col-sm-12 col-md-4 mt-3 ">
+              <div class="card otherss" >
+                <img src="{% static './assest/img/support.png' %}" class="card-img-top img-fluid mt-4 ml-4" style="width: 4rem; height: 4rem; " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">24/7 Support</h5>
+                  <p class="card-text">We provide support,guides and asistance to all our customers 24/7 on every of our services 
+                    <br>Kindly contact us on:<br>
+                    WhatsApp: +2348155278724 <br>
+                    Email: <a href="cryptochris111@gmail.com">cryptochris111@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+			    <div class="col-sm-12 col-md-4 mt-3 ">
+              <div class="card otherss" >
+                <img src="{% static './assest/img/smooth.png' %}" class="card-img-top img-fluid mt-4 ml-4" style="width: 4rem; height: 4rem; " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Smooth Trading</h5>
+                  <p class="card-text">
+                    Enjoy a seamless and hassle free experience, trading your gift cards and cryptocurrencies with cryptochris exchange.
+Fast, safe & reliable
+                  </p>
+                </div>
+              </div>
+      </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- goal ends -->
+
+
+            <!-- crypto_service start -->
+            <div class="section about_us_section crypto_section" id="services">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 mb-4 mt-4">
+                    <img src="{% static './assest/img/cryp.png' %}" class=" about_us_img img-fluid rounded mx-auto d-block" alt="Responsive image">
+                  </div>
+                  <div class="col-sm-6 mb-4 ser">
+                    <h2 class="about_text service_text">Buying of BTC/USDT/ETH and all cryptocurrencies </h2>
+                    <p class="about_para">We buy and sell all cryptocurrency at best rate, swift and safe transaction always…
+We are 100% trusted and reliable</p>
+<a href="http://wa.me//+2348155278724"><button class="cta butt" >Trade Now</button></a>
+                  </div>
+                  <div class="w-100"></div>
+						
+                  <div class="col mb-4 mt-4">
+                    <table>
+                      <tr>
+                        <th>Cryptocurrencies</th>
+                        <th>We Buy</th>
+                        <th>We sell</th>
+                      </tr>
+					   
+                      <tr>
+					 {% for x in crypto %}
+                        <td><img src="{{ x.item_photo.url }}" class=""></td>
+                        <td>${{ x.buy_price }}</td>
+                        <td>${{ x.sell_price }}</td>
+					{% endfor %}	
+                      </tr>
+					   
+                    </table>
+                  </div>
+				 
+				  
+
+
+                </div>
+              </div>
+            </div>
+            <!-- crypto_service ends -->
+			
+
+
+
+                        <!-- giftcard start -->
+                        <div class="section about_us_section giftcard_section">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-6 mt-4">
+                                <img src="{% static './assest/img/giftcard.jpg' %}" class="about_us_img img-fluid rounded mx-auto d-block" alt="Responsive image">
+                              </div>
+                              <div class="col-sm-6 mb-4 ser">
+                                <h2 class="about_text service_text">Buying of all country Giftcards </h2>
+                                <p class="about_para">We redeem all country Giftcards and give you a good value for your cards
+Start trading today and enjoy our unique transparency and swift crediting</p>
+<a href="http://wa.me//+2348155278724"><button class="cta butt" >Trade Now</button></a>
+                              </div>
+                              <div class="w-100"></div>
+                                <div class="col mb-4 mt-4">
+                                  <table>
+                                    <tr>
+                                      <th>Giftcards</th>
+                                      <th>We Buy</th>
+                                      <th>We sell</th>
+                                    </tr>
+                                    <tr>
+									{% for x in giftcard %}
+                                      <td><img src="{{ x.item_photo.url }}" class=""></td>
+									<td>${{ x.buy_price }}</td>
+									<td>${{ x.sell_price }}</td>
+									  {% endfor %}
+                                    </tr>
+                                  </table>
+                                </div>
+                            
+                            </div>
+                          </div>
+                        </div>
+                        <!-- giftcard ends -->
+
+
+                     <!-- promotion start -->
+                     <div class="section about_us_section cryptopromotion_section" id="cryptopromotion_section">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-sm-6 mt-4">
+                            <img src="{% static './assest/img/promotion.jpg' %}" class="about_us_img img-fluid rounded mx-auto d-block" alt="Responsive image">
+                          </div>
+                          <div class="col-sm-6 mb-4 ser">
+                            <h2 class="about_text service_text">Crypto promotion / marketing </h2>
+                            <p class="about_para">Setting up a new crypto project… needs someone to take your works to a larger audience or you want to set up presale, private
+							sale or full launch promotion for your crypto project we are available to help you reach your desired audience</p>
+              <a href="http://wa.me//+2348155278724"><button class="cta butt" >Get Started</button></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- promotion ends -->
+
+
+         <!-- crypto_trainig start -->
+         <div class="section about_us_section">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 mt-4">
+                <img src="{% static './assest/img/crypto_training.png' %}" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+              </div>
+              <div class="col-sm-6 ser">
+                <h2 class="about_text service_text">Crypto Mentorship / Training </h2>
+                <p class="about_para">Are you a newbie in crypto? And you are looking forward to learn cryptocurrency and earn passive income from crypto… 
+                  Our Mentorship program takes you through a unique path of becoming a professional crypto Trader/Financial Analyst. </p>
+                  <a href="http://wa.me//+2348155278724"><button class="cta butt" >Get Started</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- crypto_trainig ends -->
+
+        <!-- forex_trainig start -->
+        <div class="section about_us_section forex_sec" id="forex_sec">
+          <div class="container ">
+            <div class="row">
+              <div class="col-sm-6 mt-4">
+                <img src="{% static './assest/img/forex_training.png' %}" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+              </div>
+              <div class="col-sm-6 ser">
+                <h2 class="about_text service_text">Forex mentorship/ training </h2>
+                <p class="about_para">Our Mentorship program takes you through a unique path of becoming a professional Forex Trader/Financial Analyst.
+                  Become a boss in forex and harness steady profits from the financial and sythentic market through our mentorship programs </p>
+                  <a href="http://wa.me//+2348155278724"><button class="cta butt" >Get Started</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- forex_trainig ends -->
+
+
+
+
+
+        <!-- forex Training starts -->
+        
+        <!-- <div class="section forex_training">
+          <img src="./assest/img/forex_training.png" class="img-fluid forex_image" alt="Responsive image">
+          <div class="container">
+            <div class="row">
+              <div class="col forex_col forex_col_md">
+                <h6 class="forex_p">Forex mentorship/ training  </h6> 
+                <h2 class="forex_text">Forex mentorship/ training  </h2>
+                <p class="forex_para">Our Mentorship program takes you through a unique path of becoming a professional Forex Trader/Financial Analyst.
+Become a boss in forex and harness steady profits from the financial and sythentic market through our mentorship programs</p>
+                  <button class="cta butt" >Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- forex Training ends -->
+
+
+        <!-- other buisness starts -->
+        <div class="section other_buisness" id="other_buisness">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="about_text mb-4">Other Buisnesses</h2>
+              </div>
+              <div class="w-100"></div>
+              <div class="col-sm-12 col-md-4  mt-4">
+                <div class="card otherss" >
+                  <img src="{% static './assest/img/forex_signal.png' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Forex and crypto signals </h5>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    <a href="http://wa.me//+2348155278724"><button class="cta butt" >Learn More</button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4  mt-4">
+                <div class="card otherss" >
+                  <img src="{% static './assest/img/cac.png' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">CAC business registration</h5>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    <a href="http://wa.me//+2348155278724"><button class="cta butt" >Learn More</button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4  mt-4">
+                <div class="card otherss" >
+                  <img src="{% static './assest/img/tiktok.png' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Boosting of all social media accounts likes and followers</h5>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    <a href="http://wa.me//+2348155278724"><button class="cta butt" >Learn More</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- other buisness ends -->
+
+
+
+
+              <!-- ads start -->
+      <div class="section ads">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-lg-6 ">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{% static './assest/img/ads1.png' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static './assest/img/ads5.png' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static './assest/img/ads3.png' %}" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-6 adss">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{% static './assest/img/ads2.png' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static './assest/img/ads4.png' %}" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- ads ends -->
+
+
+
+
+
+
+
+
+
+        <!-- start trading starts 
+        <div class="container start">
+          <div class="row">
+            <div class="col">
+              <h2 class="about_text">Start Trading With Us Today!</h2>
+              <button class="cta butt" >Get Started</button>
+            </div>
+          </div>
+        </div>
+        start trading ends -->
+
+        <!-- ceo starts -->
+        <div class="section">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 mb-4 mt-4">
+                <img src="{% static './assest/img/ceo.png' %}" class="about_us_img">
+              </div>
+              <div class="col-sm-12 col-md-6 mb-4 mt-4">
+                <h2 class="about_text">What Our Ceo Says! </h2>
+                <p class="card-text ceo">Christian Osatohangbon the CEO cryptochris exchange & Chris tech fx is a young entrepreneur whose dream & vision remains digitalizing the financial world and building a new generation of millionaires through investing in crypto and forex.
+                  <br>
+                  <span class="header_text" >Cryptochris exchange</span><br>
+                  Cryptochris exchange remains the Indisputable best trading platform in Nigeria. A home for all your cryptocurrencies and Giftcards as it offers the best rate and fastest crediting service just like its motto “the future of financing” be part of the future today 
+                  Trade & Learn with cryptochris Exchange.
+                  <br>
+                  ChrisTech fx
+                  For over 5 years ChrisTech fx has hold a solid Ground in grooming novice into becoming professional forex traders 
+                  Take that solid step and send us A dm to enjoy our forex mentorship service and become a forex millionaire</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ceo ends -->
+        
+
+
+        <!-- contact starts -->
+        <!-- <div class="section">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h5 class="card-title">Contact Us!</h5>
+              </div>
+              <div class="w-100"></div>
+              <div class="col">
+                <form method="POST" >
+                
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- contact ends -->
+		
+
+		
+	
+
+
+
+
+
+
+
+
+      	<!-- footer starts -->
+        <div class="section foot mt-4">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <p>© Copyright 2023 <a href=""> Cryptochris Exchange</a> | All Rights Reserved</P>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer ends -->
+
+    
+</body>
+<script src="{% static './assest/jss/jquery.js' %}" ></script>
+<script src="{% static './assest/jss/bootstrap.min.js' %}" ></script>
+</html>
+
+
+
+
+
